@@ -186,7 +186,7 @@ from CountrySales
 group by Country,TotalSales 
 order by TotalSales desc
 
---top_2013_track.sql –go back and add the quantity
+--top_2013_track.sql â€“go back and add the quantity
 select  i2.TrackId, Year(i1.InvoiceDate), count(i2.TrackId) as TotalPurchased 
 from Invoice i1
 join InvoiceLine i2
@@ -218,7 +218,7 @@ on i1.TrackId = t1.TrackId
 join Invoice i2
 on i2.InvoiceId= i1.InvoiceId
 group by a2.Name
-order by Total desc
+order by Total desc --order by 2 desc
 
 --top_media_type.sql
 select  sum(i2.Total) as Total, m1.Name as MediaName
